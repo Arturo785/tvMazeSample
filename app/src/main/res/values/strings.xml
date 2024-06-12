@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">TvMazeSample</string>
+    <string name="image_accessibility_content">Image</string>
+    <string name="airdate_text">"Airdate: "</string>
+    <string name="airtime_text">"Airtime: "</string>
+    <string name="language_text">"Language: "</string>
+    <string name="schedule_text">"Schedule: "</string>
+    <string name="dismiss_description">Dismiss</string>
+    <string name="pick_date_description">Pick date</string>
+    <string name="set_date_description">Set date</string>
+    <string name="go_to_website_description">Go to website</string>
 </resources>

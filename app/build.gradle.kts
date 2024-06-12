@@ -4,6 +4,7 @@ plugins {
     id("kotlin-kapt")
     kotlin("kapt")
     id("dagger.hilt.android.plugin")
+    alias(libs.plugins.kotlin.serialization)
 }
 
 android {
@@ -86,12 +87,21 @@ dependencies {
     // dagger
     implementation (libs.hilt.android)
     kapt (libs.hilt.compiler)
-    implementation("androidx.hilt:hilt-navigation-compose:1.2.0")
-
-    kapt("com.google.dagger:hilt-android-compiler:2.47")
-    kapt ("androidx.hilt:hilt-compiler:1.2.0")
+    implementation(libs.androidx.hilt.navigation.compose)
+    kapt(libs.hilt.android.compiler)
+    kapt (libs.androidx.hilt.compiler)
 
     //Retrofit
     implementation (libs.retrofit)
     implementation (libs.converter.gson)
+
+    // Glide
+    implementation(libs.compose)
+
+    // Compose lifecycle
+    implementation(libs.androidx.lifecycle.runtime.compose)
+
+    //Navigation
+    implementation(libs.navigation.compose)
+    implementation(libs.kotlinx.serialization.json)
 }
