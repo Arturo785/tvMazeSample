@@ -122,7 +122,7 @@ fun ScheduleListScreenComposable(
                     modifier = Modifier
                         .padding(dimens.spaceSmall)
                         .clip(RoundedCornerShape(10))
-                        .background(MaterialTheme.colorScheme.onError),
+                        .background(MaterialTheme.colorScheme.tertiaryContainer),
                     onItemClick = {
                         viewModel.setSelectedScheduleItem(responseItem)
                         onNavigation.invoke()
